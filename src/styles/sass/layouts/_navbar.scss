@@ -1,0 +1,47 @@
+.navbar {
+  width: 100%;
+  padding: 0px 20px;
+  height: 65px;
+  background: $bg-dark;
+  @include flex;
+  .nav {
+    list-style: none;
+    @include flex;
+    &__item {
+      display: block;
+      position: relative;
+    }
+    &__link {
+      display: block;
+      padding: 15px;
+      cursor: pointer;
+    }
+
+    &__sub {
+      width: $nav-sub;
+      position: absolute;
+      padding: 10px 0px;
+      left: 0px;
+      opacity: 0;
+      transform: translateY(-20px);
+      pointer-events: none;
+      background: #3c3c3ccc;
+      transition: opacity 150ms ease-in-out, transform 150ms ease-in;
+      visibility: hidden;
+      &-link {
+        width: 300px;
+        padding: 3px 25px;
+      }
+    }
+    .nav__link:focus + .nav__sub {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      border-top: 1px solid $bg-blue;
+    }
+    .nav__link:focus {
+      background: rgba(0, 0, 0, 0.375);
+    }
+  }
+}

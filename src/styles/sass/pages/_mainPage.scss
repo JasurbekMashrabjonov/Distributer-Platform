@@ -1,0 +1,22 @@
+.mainpage {
+  width: 100%;
+  min-height: 100vh;
+  background: $bg-light;
+  .report-agency {
+    width: 60%;
+    height: calc(100vh - 65px);
+    background: $bg-light2;
+    border: 1px solid $color-dark;
+  }
+  .list-agency {
+    width: calc((100% - 60%) / 2);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  }
+  .table2 {
+    width: 100%;
+    &__title {
+      text-align: center;
+      padding: 20px 0px;
+    }
+  }
+}

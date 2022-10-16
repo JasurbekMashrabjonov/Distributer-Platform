@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  color: $color-dark;
+}
+a{
+  display: block;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}

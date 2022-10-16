@@ -1,0 +1,8 @@
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  &__text {
+    color: $color-light;
+  }
+}

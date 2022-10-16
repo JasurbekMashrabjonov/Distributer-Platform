@@ -1,0 +1,56 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  background: $bg-dark;
+  @include center;
+
+  &__card {
+    width: 400px;
+    height: 300px;
+    background: $bg-light;
+    border-radius: 10px;
+    text-align: center;
+  }
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+  }
+  &__form {
+    @include center;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px 30px;
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 0.1px solid $bg-secondary;
+      outline: none;
+      background: rgba(85, 85, 251, 0.37);
+      font-size: 20px;
+      border-radius: 5px;
+      margin: 10px 0px;
+      text-indent: 10px;
+      transition: 0.3s ease;
+      &:focus {
+        border-left: 5px solid $bg-blue;
+      }
+      &::placeholder {
+        font-family: "FontAwesome";
+      }
+    }
+    input[type="submit"] {
+      width: max-content;
+      background: $bg-blue;
+      color: $color-light;
+      text-indent: 0px;
+      cursor: pointer;
+      border: none;
+      font-size: 18px;
+      padding: 10px 15px;
+      &:active {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
