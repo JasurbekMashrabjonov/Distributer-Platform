@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Routes>
         {allow ? (
-          <Route path="/main"  element={<MainPage />} />
+          <Route path="/main" element={<MainPage />} />
         ) : (
           <Route path="/" index element={<LoginPage />} />
         )}

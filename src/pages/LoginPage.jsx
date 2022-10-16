@@ -9,7 +9,7 @@ function LoginPage() {
   const navigate = useNavigate();
   function enter(e) {
     e.preventDefault();
-    if (login === "ad" && password === "ad") {
+    if (login === "Mashrabjonov" && password === "Jasurbek") {
       setAllow();
       setLogin("");
       setPassword("");
